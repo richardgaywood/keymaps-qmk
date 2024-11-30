@@ -17,3 +17,6 @@ compile_commands.json
 
 keyboards/sofle/keymaps/rg/via-exports/
 keyboards/sofle/keymaps/rg/keymap.c.bac
+keymap-drawer/sofle-rg.k-d_munged.yaml
+keymap-drawer/sofle-rg.k-d.yaml
+keymap-drawer/sofle-rg.qmk.json
