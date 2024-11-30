@@ -15,7 +15,7 @@ sofle-rg:
 		--layer-names QWERTY COMMANDS SYMBOLS ADJUST \
 		-q keymap-drawer/$@.qmk.json \
 		-o keymap-drawer/$@.k-d.yaml
-	 ./keymap-drawer/yaml-munger.py \
+	@./keymap-drawer/yaml-munger.py \
 	     < keymap-drawer/$@.k-d.yaml \
 		 > keymap-drawer/$@.k-d_munged.yaml
 	@keymap -c keymap-drawer/keymap-drawer.conf \
