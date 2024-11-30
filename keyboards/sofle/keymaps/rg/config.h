@@ -4,7 +4,6 @@
 #pragma once
 
 #define MASTER_LEFT
-// #define EE_HANDS
 
 // I just think caps word is neat
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
@@ -18,6 +17,9 @@
 
 #define OLED_TIMEOUT 60000
 
+// OS detection
+#define OS_DETECTION_KEYBOARD_RESET
+#define OS_DETECTION_DEBOUNCE 200
 
 // interesting looking crib sources:
 // https://github.com/Coko7/sofle/blob/main/config.h
