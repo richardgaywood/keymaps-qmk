@@ -15,6 +15,9 @@
 #define TAPPING_TERM 175
 #define TAPPING_TERM_PER_KEY
 
+// not currently working
+//#define COMBO_ENABLE = yes
+
 #define OLED_TIMEOUT 60000
 
 // OS detection

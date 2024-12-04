@@ -1,5 +1,5 @@
 // Copyright 2023 QMK
-// SPDX-License-Identifier: GPL-2.0-or-later
+//k SPDX-License-Identifier: GPL-2.0-or-later
 #include QMK_KEYBOARD_H
 
 #include "keymap_uk.h" // [!code focus]
@@ -14,17 +14,33 @@ enum sofle_layers {
     ADJUST,
 };
 
+
+
 // Tap Dance declarations
 enum {
     TD_MEH_HYPR,
 };
-
-// Tap Dance definitions
 tap_dance_action_t tap_dance_actions[] = {
     // Tap once for Meh, twice for Hyper
     [TD_MEH_HYPR] = ACTION_TAP_DANCE_DOUBLE(KC_MEH, KC_HYPR)
 };
 
+
+// combos
+//const uint16_t PROGMEM test_combo1[] = {KC_A, KC_B, COMBO_END};
+//const uint16_t PROGMEM test_combo2[] = {KC_C, KC_D, COMBO_END};
+//combo_t key_combos[] = {
+//    COMBO(test_combo1, KC_ESC),
+//    COMBO(test_combo2, LCTL(KC_Z)), // keycodes with modifiers are possible too!
+//};
+
+
+
+
+
+
+// quick refs
+// https://github.com/qmk/qmk_firmware/blob/master/quantum/keymap_extras/keymap_uk.h 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -33,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | TAB  |  Q   |  W   |  E   |  R   |  T   |                    |  Y   |  U   |  I   |  O   |  P   |MINUS |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | NUBS |  A   |  S   |  D   |  F   |  G   |,------.    ,------.|  H   |  J   |  K   |  L   |UK_COL|UK_COL|
+ * | NUBS |  A   |  S   |  D   |  F   |  G   |,------.    ,------.|  H   |  J   |  K   |  L   | SCLN | MINS |
  * |------+------+------+------+------+------||      |    | MUTE ||------+------+------+------+------+------|
  * | LSFT |  Z   |  X   |  C   |  V   |  B   |`------'    `------'|  N   |  M   | COMM | DOT  | SLSH | ENT  |
  * `-------------+------+------+------+-.------------.    ,------------.-+------+------+------+-------------'
@@ -44,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_W_QWERTY] = LAYOUT(
    KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_BSPC,
    KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                          KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINUS,
-   KC_NUBS,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                          KC_H,    KC_J,    KC_K,    KC_L, UK_COLN,  UK_COLN,
+   KC_NUBS,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                          KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_MINS,
    KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,     XXXXXXX, KC_MUTE,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
     KC_ESC, KC_ENT, KC_LALT, LT(SYMBOLS, KC_TAB), CTL_T(KC_SPC),
 		                                                     /*SFT_T(KC_ENT), LT(COMMANDS, KC_BSPC), KC_RGUI,*/
@@ -58,9 +74,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    | PGUP | HOME |  UP  | END  | F11  | F12  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |      |      |      | CAPS |,------.    ,------.| PGDN | LEFT | DOWN | RGHT | DEL  | ENT  |
+ * |      |      |      |      |      | CAPS |,------.    ,------.| PGDN | LEFT | DOWN | RGHT | DEL  |      |
  * |------+------+------+------+------+------||      |    |      ||------+------+------+------+------+------|
- * |      |C(KC_Z|C(KC_X|C(KC_C|C(KC_V|      |`------'    `------'|      |C(KC_L|      |C(KC_R| INS  |      |
+ * |      |C(KC_Z|C(KC_X|C(KC_C|C(KC_V|      |`------'    `------'| BSPC | ENT  |      |      | INS  |      |
  * `-------------+------+------+------+-.------------.    ,------------.-+------+------+------+-------------'
  *               |      |      |      |/MO(ADJ/      /    \      \      \|      |      |      |
  *               |      |      |      /      /      /      \      \      \      |      |      |
@@ -69,8 +85,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [COMMANDS] = LAYOUT(  /* control layer, right mode shift */
   _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  _______,
   _______,  XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX,                        KC_PGUP, KC_HOME,   KC_UP, KC_END, KC_F11, KC_F12,
-  _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, KC_CAPS,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, KC_ENT,
-  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX,  _______,       _______,  XXXXXXX, C(KC_LEFT), XXXXXXX, C(KC_RGHT), KC_INS, _______,
+  _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, KC_CAPS,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, XXXXXXX,
+  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX,  _______,       _______, KC_BSPC,  KC_ENT, XXXXXXX, XXXXXXX, KC_INS, _______,
           _______, _______, _______, MO(ADJUST), _______,                _______, _______, _______, _______, _______
 ),
 
@@ -91,9 +107,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      | EXLM | MINS | PLUS | EQL  |UK_HAS|,------.    ,------.|UK_PIP| COLN | LPRN | RPRN | QUES |      |
  * |------+------+------+------+------+------||      |    |      ||------+------+------+------+------+------|
- * |      |UK_BSL| SLSH | ASTR | CIRC |      |`------'    `------'|UK_TIL|      | LCBR | RCBR |UK_AT |      |
+ * |      |UK_BSL| SLSH | ASTR | CIRC |UK_AT |`------'    `------'|UK_TIL| SCLN | LCBR | RCBR |      |      |
  * `-------------+------+------+------+-.------------.    ,------------.-+------+------+------+-------------'
- *               |      |      |      |/      /      /    \SFT_T(\LT(ADJ\|      |      |      |
+ *               |      |      |      |/      /      /    \      \LT(ADJ\|      |      |      |
  *               |      |      |      /      /      /      \      \      \      |      |      |
  *               `---------------------------------'        `---------------------------------'
  *                                                                                   generated by [keymapviz] */
@@ -107,11 +123,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // https://github.com/getreuer/qmk-keymap/blob/main/keyboards/zsa/moonlander/keymaps/getreuer/keymap.c
   KC_GRV,  UK_QUOT, KC_LABK, KC_RABK, UK_DQUO, KC_DOT,                         KC_AMPR, KC_DLR, KC_LBRC, KC_RBRC, KC_PERC, _______,
   _______, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  UK_HASH,                        UK_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_QUES, _______,
-  _______, UK_BSLS, KC_SLSH, KC_ASTR, KC_CIRC, XXXXXXX, _______, _______,     UK_TILD, XXXXXXX , KC_LCBR, KC_RCBR, UK_AT,   _______,
+  _______, UK_BSLS, KC_SLSH, KC_ASTR, KC_CIRC, UK_AT, _______, _______,     UK_TILD, KC_SCLN , KC_LCBR, KC_RCBR, XXXXXXX,   _______,
 
 
   // thumbs
-              _______, _______, _______, _______, _______,             SFT_T(KC_ENT), LT(ADJUST, KC_BSPC), _______, _______, _______
+              _______, _______, _______, _______, _______,             _______, LT(ADJUST, KC_BSPC), _______, _______, _______
 
 ),
 
