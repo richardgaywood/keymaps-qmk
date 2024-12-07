@@ -12,7 +12,7 @@ sofle-rg:
 	   https://github.com/jbarr21/keymap-display/blob/main/scripts/json2yaml
 	@keymap -c keymap-drawer/keymap-drawer.conf parse \
 		-c 12 \
-		--layer-names QWERTY COMMANDS SYMBOLS ADJUST \
+		--layer-names QWERTY COMMANDS SYMBOLS ADJUST NUMPAD \
 		-q keymap-drawer/$@.qmk.json \
 		-o keymap-drawer/$@.k-d.yaml
 	@./keymap-drawer/yaml-munger.py \

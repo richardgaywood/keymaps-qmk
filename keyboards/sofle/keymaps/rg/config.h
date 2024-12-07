@@ -9,7 +9,7 @@
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 
 // MOAR LAYERS for via
-#define DYNAMIC_KEYMAP_LAYER_COUNT 7
+#define DYNAMIC_KEYMAP_LAYER_COUNT 15
 
 // tap dance etc config
 #define TAPPING_TERM 175
@@ -28,3 +28,4 @@
 // https://github.com/Coko7/sofle/blob/main/config.h
 
 
+#define LAYER_LOCK_IDLE_TIMEOUT 300000  // in seconds.

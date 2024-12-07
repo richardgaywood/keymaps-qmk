@@ -19,7 +19,9 @@ CONSOLE_ENABLE = no         # Console for debug
 MOUSEKEY_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 VIA_ENABLE = yes
-# COMBO_ENABLE = yes
+COMBO_ENABLE = yes
+LAYER_LOCK_ENABLE = yes
+BOOTMAGIC_ENABLE = yes
 
 # tap dance, mod tap, etc
 TAP_DANCE_ENABLE = yes
