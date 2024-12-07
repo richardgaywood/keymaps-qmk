@@ -17,12 +17,12 @@ CONSOLE_ENABLE = no         # Console for debug
 
 # my settings
 MOUSEKEY_ENABLE = yes
-TAP_DANCE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 VIA_ENABLE = yes
 # COMBO_ENABLE = yes
 
-# meta stuff; config about config
+# tap dance, mod tap, etc
+TAP_DANCE_ENABLE = yes
 DYNAMIC_TAPPING_TERM_ENABLE = yes
 
 
