@@ -36,6 +36,12 @@ def process_key(key, layer_name, row_idx, col_idx):
         elif alphas.match(key): return {'t': key, 'type': 'color-group-2'}
         elif punct.match(key): return {'t': key, 'type': 'color-group-1'}
         else: return {'t': key, 'type': 'color-group-3'}
+
+    if layer_name == 'NUMPAD':
+        if nums.match(key): return {'t': key, 'type': 'color-group-1'}
+        elif alphas.match(key): return {'t': key, 'type': 'color-group-2'}
+        elif punct.match(key): return {'t': key, 'type': 'color-group-3'}
+        else: return {'t': key, 'type': 'color-group-4'}    
     return "";
 
 data = yaml.safe_load(sys.stdin.read())
