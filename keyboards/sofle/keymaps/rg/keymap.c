@@ -68,7 +68,7 @@ combo_t key_combos[] = {
 //   ),
 
 
- 
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* ,-----------------------------------------.                    ,-----------------------------------------.
@@ -177,7 +177,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   XXXXXXX  , XXXXXXX, CG_NORM,XXXXXXX ,XXXXXXX,XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, CG_NORM, DT_DOWN, /* dynamic tapping term */
   XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, DT_PRNT,
   CG_TOGG , XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX,     XXXXXXX, CG_SWAP, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, DT_UP,
-                   _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______    
+                   _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______
 
   ),
 
@@ -308,7 +308,7 @@ static void print_status_narrow(void) {
             break;
         case NUMPAD:
             oled_write_P(PSTR("NumP \n"), false);
-            break;        
+            break;
         default:
             // Or use the write_ln \shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undef\n"), false);
