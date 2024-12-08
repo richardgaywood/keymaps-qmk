@@ -2,6 +2,11 @@ QMK keymaps for my programmable keyboards.
 
 So far, just one: a Sofle.
 
+
+## ToDos
+
+- [ ] combo directory managemrnt - https://docs.qmk.fm/features/combo#dictionary-management 
+
 ## Interesting links for future reference
 
 - https://github.com/qmk/awesome-userspaces/

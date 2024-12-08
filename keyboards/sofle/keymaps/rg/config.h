@@ -13,11 +13,8 @@
 
 // tap dance etc config
 #define TAPPING_TERM 225
-#define TAPPING_TERM_PER_KEY
+#define TAPPING_TERM_PER_KEY // not used... yet
 #define PERMISSIVE_HOLD
-
-// not currently working
-//#define COMBO_ENABLE = yes
 
 #define OLED_TIMEOUT 60000
 
@@ -29,4 +26,4 @@
 // https://github.com/Coko7/sofle/blob/main/config.h
 
 
-#define LAYER_LOCK_IDLE_TIMEOUT 300000  // in seconds.
+#define LAYER_LOCK_IDLE_TIMEOUT 180000  // in milliseconds.
