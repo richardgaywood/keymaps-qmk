@@ -12,8 +12,9 @@
 #define DYNAMIC_KEYMAP_LAYER_COUNT 15
 
 // tap dance etc config
-#define TAPPING_TERM 175
+#define TAPPING_TERM 225
 #define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
 
 // not currently working
 //#define COMBO_ENABLE = yes
