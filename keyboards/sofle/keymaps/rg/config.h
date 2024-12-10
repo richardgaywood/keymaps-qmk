@@ -15,6 +15,7 @@
 #define TAPPING_TERM 225
 #define TAPPING_TERM_PER_KEY // not used... yet
 #define PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD_PER_KEY
 
 #define OLED_TIMEOUT 60000
 

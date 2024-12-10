@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      | EXLM | MINS | PLUS | EQL  |UK_HAS|,------.    ,------.|UK_PIP| COLN | LPRN | RPRN | QUES |      |
  * |------+------+------+------+------+------||      |    |      ||------+------+------+------+------+------|
- * |      |UK_BSL| SLSH | ASTR | CIRC |UK_AT |`------'    `------'|UK_TIL| SCLN | LCBR | RCBR |      |      |
+ * |      |UK_BSL| SLSH | ASTR | CIRC |UK_AT |`------'    `------'|UK_TIL| SCLN | LCBR | RCBR | UNDS |      |
  * `-------------+------+------+------+-.------------.    ,------------.-+------+------+------+-------------'
  *               |      |      |      |/      /      /    \      \LT(ADJ\|      |      |      |
  *               |      |      |      /      /      /      \      \      \      |      |      |
@@ -121,7 +121,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // https://github.com/getreuer/qmk-keymap/blob/main/keyboards/zsa/moonlander/keymaps/getreuer/keymap.c
   KC_GRV,  UK_QUOT, KC_LABK, KC_RABK, UK_DQUO, KC_DOT,                         KC_AMPR, KC_DLR, KC_LBRC, KC_RBRC, KC_PERC, _______,
   _______, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  UK_HASH,                        UK_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_QUES, _______,
-  _______, UK_BSLS, KC_SLSH, KC_ASTR, KC_CIRC, UK_AT, _______, _______,     UK_TILD, KC_SCLN , KC_LCBR, KC_RCBR, XXXXXXX,   _______,
+  _______, UK_BSLS, KC_SLSH, KC_ASTR, KC_CIRC, UK_AT, _______, _______,     UK_TILD, KC_SCLN , KC_LCBR, KC_RCBR,  KC_UNDS,   _______,
 
 
   // thumbs
@@ -178,6 +178,32 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 
+
+#ifdef TAPPING_TERM_PER_KEY
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case CTL_T(KC_SPC):
+            return 125; 
+        //case LT(1, KC_GRV):
+        //    return 130;
+        default:
+            return TAPPING_TERM;
+    }
+}
+#endif 
+bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case CTL_T(KC_SPC):
+            // Immediately select the hold action when another key is tapped.
+            return false;
+        default:
+            // Do not select the hold action when another key is tapped.
+            return true;
+    }
+}
+#ifdef PERMISSIVE_HOLD_PER_KEY
+
+#endif
 // bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 //   // If console is enabled, it will print the matrix position and status of each key pressed
 // // #ifdef CONSOLE_ENABLE
