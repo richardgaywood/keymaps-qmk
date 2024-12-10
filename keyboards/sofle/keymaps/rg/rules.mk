@@ -3,7 +3,6 @@
 
 # duplicating settings from the default sofle config here, for reference
 SPLIT_KEYBOARD = yes
-ENCODER_ENABLE = yes
 OLED_ENABLE = yes
 # "The swap-hands action allows support for one-handed typing without requiring a separate layer."
 # SWAP_HANDS_ENABLE = yes
@@ -30,6 +29,10 @@ VPATH += keyboards/gboards
 # tap dance, mod tap, etc
 TAP_DANCE_ENABLE = yes
 DYNAMIC_TAPPING_TERM_ENABLE = yes
+
+# encoders
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
 
 
 # these settings are used in keyhhive fork

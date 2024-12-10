@@ -27,3 +27,15 @@
 
 
 #define LAYER_LOCK_IDLE_TIMEOUT 180000  // in milliseconds.
+		
+// encoder stuff
+// https://docs.qmk.fm/features/encoders
+// #define ENCODER_A_PINS_RIGHT { encoder1a, encoder2a }
+// #define ENCODER_B_PINS_RIGHT { encoder1b, encoder2b }
+// #define ENCODER_RESOLUTIONS_RIGHT { 2, 4 }
+//
+// #define ENCODER_DIRECTION_FLIP
+// #define ENCODER_RESOLUTION 4
+// #define ENCODER_RESOLUTIONS { 4, 2 }
+//
+//
