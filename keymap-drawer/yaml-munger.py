@@ -15,6 +15,9 @@ color_group_munges = {
 nums = re.compile(r'^\d$')
 alphas = re.compile(r'^[a-zA-Z]$')
 punct = re.compile(r'^([\[\]!"#$%&\'\(\)*+,./:;<=>?@\\^_\-`{|}~])|(NUBS)|(NUHS)$')
+f_keys = re.compile(r'^F[0-9]{1,2}$')
+arrows = ['UP', 'DOWN', 'LEFT', 'RGHT']
+nav = ['PGUP', 'PGDN', 'HOME', 'END']
 
 def process_key(key, layer_name, row_idx, col_idx):
     # sys.stderr.write(f'KEY IS <<{key}>>\n')
@@ -27,9 +30,12 @@ def process_key(key, layer_name, row_idx, col_idx):
         for color_group in color_group_munges[layer_name]:
             if key in color_group_munges[layer_name][color_group]:
                 return {'t': key, 'type': color_group}
+
     # default color for all other punctuaton on the symbol layer
-    if layer_name == 'SYMBOLS' and punct.match(key):
-        return {'t': key, 'type': 'color-group-1'}
+    if layer_name == 'SYMBOLS':
+        if punct.match(key): return {'t': key, 'type': 'color-group-1'}
+        elif alphas.match(key): return {'t': key, 'type': 'color-group-6'}
+        elif nums.match(key): return {'t': key, 'type': 'color-group-6'}
 
     if layer_name == 'QWERTY':
         if nums.match(key): return {'t': key, 'type': 'color-group-1'}
@@ -41,6 +47,12 @@ def process_key(key, layer_name, row_idx, col_idx):
         if nums.match(key): return {'t': key, 'type': 'color-group-1'}
         elif alphas.match(key): return {'t': key, 'type': 'color-group-2'}
         elif punct.match(key): return {'t': key, 'type': 'color-group-3'}
+        else: return {'t': key, 'type': 'color-group-4'}    
+
+    if layer_name == 'COMMANDS':
+        if f_keys.match(key): return {'t': key, 'type': 'color-group-1'}
+        elif key in arrows: return {'t': key, 'type': 'color-group-2'}
+        elif key in nav: return {'t': key, 'type': 'color-group-3'}
         else: return {'t': key, 'type': 'color-group-4'}    
     return "";
 
