@@ -5,7 +5,7 @@ So far, just one: a Sofle.
 
 ## ToDos
 
-- [ ] combo directory managemrnt - https://docs.qmk.fm/features/combo#dictionary-management 
+- [ ] combo directory management - https://docs.qmk.fm/features/combo#dictionary-management 
 
 ## Interesting links for future reference
 
