@@ -3,6 +3,10 @@ QMK keymaps for my programmable keyboards.
 So far, just one: a Sofle.
 
 
+## Sofle layout
+
+![A graphic showing my keymap](sofle-rg.svg)
+
 ## ToDos
 
 - [ ] combo directory management - https://docs.qmk.fm/features/combo#dictionary-management 
