@@ -90,8 +90,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [COMMANDS] = LAYOUT(  /* control layer, right mode shift */
   _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,  XXXXXXX,  KC_EQL,
   _______,  KC_F6,  KC_F7,   KC_F8,  KC_F9, KC_F10,                        KC_PGUP, KC_HOME,   KC_UP, KC_END, XXXXXXX, _______,
-  _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_F11, KC_F12,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  XXXXXXX, KC_DEL,
-  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX,  _______,       _______, KC_BSPC,  KC_ENT, XXXXXXX, XXXXXXX, KC_INS, _______,
+  _______, KC_GUI,  KC_LALT,  KC_LCTL,  KC_LSFT, KC_F11,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  XXXXXXX, KC_DEL,
+  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_F12,  _______,       _______, KC_BSPC,  KC_ENT, XXXXXXX, XXXXXXX, KC_INS, _______,
           _______, _______, _______, MO(ADJUST), _______,                _______, _______, _______, _______, _______
 ),
 
