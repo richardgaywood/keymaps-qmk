@@ -340,7 +340,7 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key color-group-3 keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">MO(SYMBOLS)</tspan></text>
+<text x="0" y="0" class="key color-group-3 tap">LCTL</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key color-group-3 keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key color-group-3"/>
@@ -577,17 +577,17 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(196, 252)" class="key trans keypos-51">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(196, 252)" class="key color-group-4 keypos-51">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-4"/>
+<text x="0" y="0" class="key color-group-4 tap"><tspan style="font-size: 70%">MO(ADJUST)</tspan></text>
 </g>
 <g transform="translate(252, 259)" class="key trans keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(316, 274) rotate(22.5)" class="key color-group-4 keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-4"/>
-<text x="0" y="0" class="key color-group-4 tap"><tspan style="font-size: 70%">MO(ADJUST)</tspan></text>
+<g transform="translate(316, 274) rotate(22.5)" class="key trans keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
