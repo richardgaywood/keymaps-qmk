@@ -108,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* ,-----------------------------------------.                    ,-----------------------------------------.
  * |      | UK_1 | UK_2 | UK_3 | UK_4 | UK_5 |                    | UK_6 | UK_7 | UK_8 | UK_9 | UK_0 | EQL  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | GRV  |UK_QUO| LABK | RABK |UK_DQU| DOT  |                    | AMPR | DLR  | LBRC | RBRC | PERC |      |
+ * |      | GRV  | LABK | RABK |UK_QUO|UK_DQU|                    | AMPR | DLR  | LBRC | RBRC | PERC |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      | EXLM | MINS | PLUS | EQL  |UK_HAS|,------.    ,------.|UK_PIP| COLN | LPRN | RPRN | QUES |      |
  * |------+------+------+------+------+------||      |    |      ||------+------+------+------+------+------|
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   _______,  UK_BSLS, KC_COLN, KC_SCLN, KC_COMMA, KC_DOT,  _______, _______,    UK_SLSH, UK_PIPE, _______, _______,_______,  _______,
 
   // https://github.com/getreuer/qmk-keymap/blob/main/keyboards/zsa/moonlander/keymaps/getreuer/keymap.c
-  KC_GRV,  UK_QUOT, KC_LABK, KC_RABK, UK_DQUO, KC_DOT,                         KC_AMPR, KC_DLR, KC_LBRC, KC_RBRC, KC_PERC, _______,
+  _______, KC_GRV, KC_LABK, KC_RABK, UK_QUOT, UK_DQUO,                         KC_AMPR, KC_DLR, KC_LBRC, KC_RBRC, KC_PERC, _______,
   _______, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  UK_HASH,                        UK_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_QUES, _______,
   _______, UK_BSLS, KC_SLSH, KC_ASTR, KC_CIRC, UK_AT, _______, _______,     UK_TILD, KC_SCLN , KC_LCBR, KC_RCBR,  KC_UNDS,   _______,
 
