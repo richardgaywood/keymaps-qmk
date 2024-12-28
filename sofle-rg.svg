@@ -723,17 +723,17 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
 <text x="0" y="0" class="key color-group-3 tap">!</text>
 </g>
-<g transform="translate(140, 147)" class="key color-group-5 keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
-<text x="0" y="0" class="key color-group-5 tap">-</text>
+<g transform="translate(140, 147)" class="key color-group-3 keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap">=</text>
 </g>
 <g transform="translate(196, 140)" class="key color-group-5 keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
 <text x="0" y="0" class="key color-group-5 tap">+</text>
 </g>
-<g transform="translate(252, 147)" class="key color-group-3 keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap">=</text>
+<g transform="translate(252, 147)" class="key color-group-5 keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
+<text x="0" y="0" class="key color-group-5 tap">-</text>
 </g>
 <g transform="translate(308, 154)" class="key color-group-1 keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
@@ -771,17 +771,17 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
 <text x="0" y="0" class="key color-group-1 tap">\</text>
 </g>
-<g transform="translate(140, 203)" class="key color-group-5 keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
-<text x="0" y="0" class="key color-group-5 tap">/</text>
+<g transform="translate(140, 203)" class="key color-group-1 keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
+<text x="0" y="0" class="key color-group-1 tap">^</text>
 </g>
 <g transform="translate(196, 196)" class="key color-group-5 keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
 <text x="0" y="0" class="key color-group-5 tap">*</text>
 </g>
-<g transform="translate(252, 203)" class="key color-group-1 keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
-<text x="0" y="0" class="key color-group-1 tap">^</text>
+<g transform="translate(252, 203)" class="key color-group-5 keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-5"/>
+<text x="0" y="0" class="key color-group-5 tap">/</text>
 </g>
 <g transform="translate(308, 210)" class="key color-group-1 keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
@@ -795,9 +795,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 210)" class="key color-group-4 keypos-44">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-4"/>
-<text x="0" y="0" class="key color-group-4 tap">~</text>
+<g transform="translate(588, 210)" class="key color-group-1 keypos-44">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
+<text x="0" y="0" class="key color-group-1 tap">_</text>
 </g>
 <g transform="translate(644, 203)" class="key color-group-1 keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
@@ -811,9 +811,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
 <text x="0" y="0" class="key color-group-2 tap">}</text>
 </g>
-<g transform="translate(812, 231)" class="key color-group-1 keypos-48">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
-<text x="0" y="0" class="key color-group-1 tap">_</text>
+<g transform="translate(812, 231)" class="key color-group-4 keypos-48">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-4"/>
+<text x="0" y="0" class="key color-group-4 tap">~</text>
 </g>
 <g transform="translate(868, 231)" class="key trans keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -843,9 +843,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">LT(ADJUST,…</tspan></text>
+<g transform="translate(580, 274) rotate(-22.5)" class="key trans keypos-56">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(644, 259)" class="key trans keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1261,18 +1261,21 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(140, 259)" class="key keypos-50">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(140, 259)" class="key trans keypos-50">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(196, 252)" class="key keypos-51">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(196, 252)" class="key trans keypos-51">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(252, 259)" class="key trans keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(316, 274) rotate(22.5)" class="key trans keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
@@ -1282,9 +1285,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key color-group-1"/>
 <text x="0" y="0" class="key color-group-1 tap">0</text>
 </g>
-<g transform="translate(580, 274) rotate(-22.5)" class="key color-group-3 keypos-56">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap">.</text>
+<g transform="translate(580, 274) rotate(-22.5)" class="key color-group-4 keypos-56">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-4"/>
+<text x="0" y="0" class="key color-group-4 tap"><tspan style="font-size: 64%">LT(ADJUST,…</tspan></text>
 </g>
 <g transform="translate(644, 259)" class="key color-group-1 keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-1"/>
