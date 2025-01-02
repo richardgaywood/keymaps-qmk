@@ -1,5 +1,11 @@
+
+// all disabled for now
+// to use these again, remember to re-enable this line in keymap.c:
+// #include "g/keymap_combo.h"
+
+
 //   name                   result          chord keys
-// COMB(LEFT_TRIPLE_ESC,       KC_ESC,         KC_W, KC_E, KC_R)
+COMB(LEFT_TRIPLE_ESC,       KC_ESC,         KC_W, KC_E, KC_R)
 // COMB(LEFT_DOUBLE_ENTER,     KC_ENTER,       KC_C, KC_V)
 // COMB(RIGHT_DOUBLE_TAB,      KC_TAB,         KC_I,	KC_O)
 // COMB(RIGHT_DOUBLE_SHIFT_TAB,      LSFT(KC_TAB),         KC_U,	KC_I)
