@@ -1,10 +1,10 @@
 //   name                   result          chord keys
-COMB(LEFT_TRIPLE_ESC,       KC_ESC,         KC_W, KC_E, KC_R)
-COMB(LEFT_DOUBLE_ENTER,     KC_ENTER,       KC_C, KC_V)
-COMB(RIGHT_DOUBLE_TAB,      KC_TAB,         KC_I,	KC_O)
-COMB(RIGHT_DOUBLE_SHIFT_TAB,      LSFT(KC_TAB),         KC_U,	KC_I)
-COMB(RIGHT_DOUBLE_ENTER,    KC_ENTER,       KC_M, KC_COMMA)
-COMB(RIGHT_DOUBLE_SHIFT_ENTER,    LSFT(KC_ENTER),       KC_N, KC_M)
+// COMB(LEFT_TRIPLE_ESC,       KC_ESC,         KC_W, KC_E, KC_R)
+// COMB(LEFT_DOUBLE_ENTER,     KC_ENTER,       KC_C, KC_V)
+// COMB(RIGHT_DOUBLE_TAB,      KC_TAB,         KC_I,	KC_O)
+// COMB(RIGHT_DOUBLE_SHIFT_TAB,      LSFT(KC_TAB),         KC_U,	KC_I)
+// COMB(RIGHT_DOUBLE_ENTER,    KC_ENTER,       KC_M, KC_COMMA)
+// COMB(RIGHT_DOUBLE_SHIFT_ENTER,    LSFT(KC_ENTER),       KC_N, KC_M)
 
 
 
