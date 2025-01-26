@@ -1012,6 +1012,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 </g>
 <g transform="translate(525, 210)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">QK</tspan><tspan x="0" dy="1.2em">MAGIC</tspan><tspan x="0" dy="1.2em">…</tspan>
+</text>
 </g>
 <g transform="translate(588, 210)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

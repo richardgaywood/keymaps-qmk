@@ -148,7 +148,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |      |                    |      |      |      |      |      |DT_DOW|
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |CG_TOG|      |      |      |      |      |,------.    ,------.|      | VOLD | MUTE | VOLU |      |DT_PRN|
- * |------+------+------+------+------+------||      |    |      ||------+------+------+------+------+------|
+ * |------+------+------+------+------+------||      |    |QK_MAG||------+------+------+------+------+------|
  * |      |      |      |      |      |      |`------'    `------'|      | MPRV | MPLY | MNXT |      |DT_UP |
  * `-------------+------+------+------+-.------------.    ,------------.-+------+------+------+-------------'
  *               |      |      |      |/      /      /    \      \      \|      |      |      |
@@ -159,7 +159,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   TD_BOOT_CLR_EEPROM , XXXXXXX,  XXXXXXX ,  XXXXXXX , XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL,
   XXXXXXX  , XXXXXXX, XXXXXXX ,XXXXXXX ,XXXXXXX,XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DT_DOWN, /* dynamic tapping term */
   CG_TOGG, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, DT_PRNT,
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, DT_UP,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX,     QK_MAGIC_TOGGLE_NKRO, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, DT_UP,
                    _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______
 
   ),
