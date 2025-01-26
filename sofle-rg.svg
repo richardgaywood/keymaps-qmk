@@ -240,9 +240,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
 <text x="0" y="0" class="key color-group-2 tap">D</text>
 </g>
-<g transform="translate(252, 147)" class="key color-group-3 keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">LT(SYMBOLS…</tspan></text>
+<g transform="translate(252, 147)" class="key color-group-2 keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
+<text x="0" y="0" class="key color-group-2 tap">F</text>
 </g>
 <g transform="translate(308, 154)" class="key color-group-2 keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
@@ -252,9 +252,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
 <text x="0" y="0" class="key color-group-2 tap">H</text>
 </g>
-<g transform="translate(644, 147)" class="key color-group-3 keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">LT(SYMBOLS…</tspan></text>
+<g transform="translate(644, 147)" class="key color-group-2 keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
+<text x="0" y="0" class="key color-group-2 tap">J</text>
 </g>
 <g transform="translate(700, 140)" class="key color-group-2 keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-2"/>
@@ -329,27 +329,28 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 </g>
 <g transform="translate(140, 259)" class="key color-group-3 keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap">ESC</text>
+</g>
+<g transform="translate(196, 252)" class="key color-group-3 keypos-51">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
 <text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 70%">TT(NUMPAD)</tspan></text>
 </g>
-<g transform="translate(196, 252)" class="key keypos-51">
+<g transform="translate(252, 259)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(252, 259)" class="key color-group-3 keypos-52">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap">LALT</text>
+<text x="0" y="0" class="key tap">ENT</text>
+<text x="0" y="24" class="key hold">KC_LCTL</text>
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key color-group-3 keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap">LCTL</text>
+<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">LT(SYMBOLS…</tspan></text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key color-group-3 keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key color-group-3"/>
 <text x="0" y="0" class="key color-group-3 tap">SPC</text>
 </g>
-<g transform="translate(518, 291) rotate(-30.0)" class="key keypos-55">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">ENT</text>
-<text x="0" y="38" class="key hold">RSFT</text>
+<g transform="translate(518, 291) rotate(-30.0)" class="key color-group-3 keypos-55">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap">RSFT</text>
 </g>
 <g transform="translate(580, 274) rotate(-22.5)" class="key color-group-3 keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
@@ -357,14 +358,15 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 </g>
 <g transform="translate(644, 259)" class="key color-group-3 keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<text x="0" y="0" class="key color-group-3 tap">RGUI</text>
+<text x="0" y="0" class="key color-group-3 tap">BSPC</text>
 </g>
 <g transform="translate(700, 252)" class="key color-group-3 keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
 <text x="0" y="0" class="key color-group-3 tap">MEH</text>
 </g>
-<g transform="translate(756, 259)" class="key keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(756, 259)" class="key color-group-3 keypos-59">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap">RGUI</text>
 </g>
 </g>
 </g>
