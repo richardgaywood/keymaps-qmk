@@ -25,6 +25,7 @@ COMBO_ENABLE = yes
 # more info: https://docs.qmk.fm/features/combo#dictionary-management
 VPATH += keyboards/gboards
 
+KEY_OVERRIDE_ENABLE = yes
 
 # tap dance, mod tap, etc
 TAP_DANCE_ENABLE = yes
