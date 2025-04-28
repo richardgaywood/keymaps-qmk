@@ -21,3 +21,7 @@ sofle-rg:
 	@keymap -c keymap-drawer/keymap-drawer.conf \
 	    draw keymap-drawer/$@.k-d_munged.yaml \
 		-o $@.svg
+
+
+bad_wings-rg1:
+	qmk compile -kb bad_wings -km rg1 
