@@ -35,7 +35,8 @@
 // #define ENCODER_A_PINS_RIGHT { encoder1a, encoder2a }
 // #define ENCODER_B_PINS_RIGHT { encoder1b, encoder2b }
 // #define ENCODER_RESOLUTIONS_RIGHT { 2, 4 }
-// #define ENCODER_RESOLUTION 4
+#undef ENCODER_RESOLUTION
+#define ENCODER_RESOLUTION 4
 // #define ENCODER_RESOLUTIONS { 4, 2 }
 //
 //

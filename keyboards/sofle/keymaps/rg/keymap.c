@@ -242,12 +242,15 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 #endif ENCODER_ENABLE
 */
 
+// #define RG_UNDO LCTL(KC_Z)
+// #define RG_REDO LCTL(KC_Y)
+
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [_W_QWERTY] = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD),  ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  },
+    [_W_QWERTY] = {ENCODER_CCW_CW(LSFT(KC_TAB), KC_TAB) , ENCODER_CCW_CW(KC_PGUP, KC_PGDN)},
     [_M_QWERTY] = { ENCODER_CCW_CW(UG_HUED, UG_HUEU),  ENCODER_CCW_CW(UG_SATD, UG_SATU)  },
     [_GAME] = { ENCODER_CCW_CW(UG_VALD, UG_VALU),  ENCODER_CCW_CW(UG_SPDD, UG_SPDU)  },
-    [COMMANDS] = { ENCODER_CCW_CW(UG_PREV, UG_NEXT),  ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [COMMANDS] = { ENCODER_CCW_CW(LCTL(KC_Z), LCTL(KC_Y)),  ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
     [SYMBOLS] = { ENCODER_CCW_CW(UG_PREV, UG_NEXT),  ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
     [ADJUST] = { ENCODER_CCW_CW(UG_PREV, UG_NEXT),  ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
     [NUMPAD] = { ENCODER_CCW_CW(UG_PREV, UG_NEXT),  ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
@@ -327,7 +330,7 @@ static void print_status_narrow(void) {
             // Or use the write_ln \shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undef\n"), false);
     }
-
+ 
     oled_write_ln_P(PSTR("Mode:"), false);
     if (keymap_config.swap_lctl_lgui) {
         oled_write_ln_P(PSTR("Mac\n"), false);
