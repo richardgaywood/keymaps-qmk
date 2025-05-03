@@ -3,7 +3,7 @@
 #include QMK_KEYBOARD_H
 
 #include "keymap_uk.h" // [!code focus]
-#include "g/keymap_combo.h" // see https://docs.qmk.fm/features/combo#dictionary-management
+#include "keymap_combo.h" // see https://docs.qmk.fm/features/combo#dictionary-management
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
@@ -68,11 +68,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_W_QWERTY] = LAYOUT(
    KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_MINS,
    KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                          KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_BSPC,
-   KC_LALT,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                          KC_H,    KC_J,    KC_K,    KC_L, UK_QUOT,  KC_SCLN,  
+   KC_LALT,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                          KC_H,    KC_J,    KC_K,    KC_L, UK_QUOT,  KC_SCLN,
    KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,     XXXXXXX, KC_MUTE,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
 
     /* left thumbs*/
-    KC_ESC, TT(NUMPAD), MT(MOD_LCTL, KC_ENT), LT(SYMBOLS, KC_TAB), KC_SPC,       
+    KC_ESC, TT(NUMPAD), MT(MOD_LCTL, KC_ENT), LT(SYMBOLS, KC_TAB), KC_SPC,
                                                 /* right thumbs */
                                                 KC_RSFT, MO(COMMANDS), KC_BSPC, KC_MEH, KC_RGUI
 
@@ -194,12 +194,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case CTL_T(KC_SPC):
-            return TAPPING_TERM - 100; 
+            return TAPPING_TERM - 100;
         default:
             return TAPPING_TERM;
     }
 }
-#endif 
+#endif
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case CTL_T(KC_SPC):
@@ -330,7 +330,7 @@ static void print_status_narrow(void) {
             // Or use the write_ln \shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undef\n"), false);
     }
- 
+
     oled_write_ln_P(PSTR("Mode:"), false);
     if (keymap_config.swap_lctl_lgui) {
         oled_write_ln_P(PSTR("Mac\n"), false);

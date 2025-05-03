@@ -256,11 +256,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
 <text x="0" y="0" class="key color-group-3 tap">LCTL</text>
 </g>
-<g transform="translate(252, 216)" class="key keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#COMMANDS">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">COMMANDS</tspan></text>
-</a><text x="0" y="24" class="key hold">sticky</text>
+<g transform="translate(252, 216)" class="key color-group-3 keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">OSL(SYMBOL…</tspan></text>
 </g>
 <g transform="translate(308, 222)" class="key color-group-3 keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
@@ -273,15 +271,12 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 </g>
 <g transform="translate(476, 216)" class="key color-group-3 keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
-<a href="#SYMBOLS">
-<text x="0" y="0" class="key color-group-3 tap layer-activator">SYMBOLS</text>
-</a></g>
-<g transform="translate(532, 210)" class="key keypos-35">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENT</text>
-<a href="#ADJUST">
-<text x="0" y="24" class="key hold layer-activator">ADJUST</text>
-</a></g>
+<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">MO(COMMAND…</tspan></text>
+</g>
+<g transform="translate(532, 210)" class="key color-group-3 keypos-35">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key color-group-3"/>
+<text x="0" y="0" class="key color-group-3 tap"><tspan style="font-size: 64%">LT(NUMPAD,…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 306)" class="layer-COMMANDS">
@@ -413,8 +408,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(252, 216)" class="key held keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(252, 216)" class="key trans keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(308, 222)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -579,8 +575,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(476, 216)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(476, 216)" class="key trans keypos-34">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(532, 210)" class="key trans keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -724,8 +721,9 @@ text.color-group-6 { stroke: none; fill: white; stroke-width: 1;}
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(532, 210)" class="key held keypos-35">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(532, 210)" class="key trans keypos-35">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 </g>
 </g>
