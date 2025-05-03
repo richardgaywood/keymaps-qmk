@@ -20,3 +20,6 @@ keyboards/sofle/keymaps/rg/keymap.c.bac
 keymap-drawer/sofle-rg.k-d_munged.yaml
 keymap-drawer/sofle-rg.k-d.yaml
 keymap-drawer/sofle-rg.qmk.json
+keymap-drawer/bad-wings-rg1.k-d_munged.yaml
+keymap-drawer/bad-wings-rg1.qmk.json
+keymap-drawer/bad-wings-rg1.k-d.yaml

@@ -23,5 +23,20 @@ sofle-rg:
 		-o $@.svg
 
 
-bad_wings-rg1:
-	qmk compile -kb bad_wings -km rg1 
+bad-wings-rg1:
+	qmk compile -kb hazel/bad_wings_v2 -km rg1
+
+	qmk c2json -kb hazel/bad_wings_v2 -km rg1 -o keymap-drawer/$@.qmk.json --no-cpp
+
+	keymap -c keymap-drawer/keymap-drawer.conf parse \
+		-c 12 \
+		--layer-names QWERTY COMMANDS SYMBOLS ADJUST NUMPAD MOUSE \
+		-q keymap-drawer/$@.qmk.json \
+		-o keymap-drawer/$@.k-d.yaml
+	./keymap-drawer/yaml-munger.py \
+	     < keymap-drawer/$@.k-d.yaml \
+		 > keymap-drawer/$@.k-d_munged.yaml
+	keymap -c keymap-drawer/keymap-drawer.conf \
+	    draw keymap-drawer/$@.k-d_munged.yaml \
+		--qmk-info-json keyboards/hazel/bad_wings_v2/info.json \
+		-o $@.svg
