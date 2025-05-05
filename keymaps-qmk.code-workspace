@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../qmk_firmware"
 		}
 	],
 	"settings": {}
