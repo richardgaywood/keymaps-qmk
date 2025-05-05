@@ -1,3 +1,4 @@
+#include "pointing_device/pointing_device_auto_mouse.h"
 #include QMK_KEYBOARD_H
 #include "keymap_uk.h"
 

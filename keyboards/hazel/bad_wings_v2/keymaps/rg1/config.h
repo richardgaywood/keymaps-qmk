@@ -15,6 +15,9 @@
 
 // cirque settings
 // https://docs.qmk.fm/features/pointing_device
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+
+
 #define CIRQUE_PINNACLE_POSITION_MODE  CIRQUE_PINNACLE_ABSOLUTE_MODE
 
 // Touch originating in outer ring can trigger scroll by moving along
@@ -25,7 +28,7 @@
 // enable or disable taps
 #define CIRQUE_PINNACLE_TAP_ENABLE
 
-#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+
 
 
 // CIRQUE_PINNACLE_ATTENUATION
