@@ -56,11 +56,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [MOUSE] = LAYOUT_split_3x5_3(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, QK_MOUSE_WHEEL_UP,                                  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, OSM(MOD_LGUI), OSM(MOD_LALT), OSM(MOD_LCTL), OSM(MOD_LSFT),              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, QK_MOUSE_WHEEL_DOWN,                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
         // thumbs
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+        KC_TRNS, MS_BTN1, MS_BTN2,                                                      KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
 };
@@ -71,5 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void pointing_device_init_user(void) {
     set_auto_mouse_layer(MOUSE);
     set_auto_mouse_enable(true);
+
+    pointing_device_set_cpi(800);
 };
 
