@@ -38,5 +38,5 @@ bad-wings-rg1:
 		 > keymap-drawer/$@.k-d_munged.yaml
 	keymap -c keymap-drawer/keymap-drawer.conf \
 	    draw keymap-drawer/$@.k-d_munged.yaml \
-		--qmk-info-json keyboards/hazel/bad_wings_v2/info.json \
+		--qmk-info-json qmk_firmware/keyboards/hazel/bad_wings_v2/info.json \
 		-o $@.svg
