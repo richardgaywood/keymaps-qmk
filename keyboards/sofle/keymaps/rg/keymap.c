@@ -3,7 +3,7 @@
 #include QMK_KEYBOARD_H
 
 #include "keymap_uk.h" // [!code focus]
-#include "keymap_combo.h" // see https://docs.qmk.fm/features/combo#dictionary-management
+#include "g/keymap_combo.h" // see https://docs.qmk.fm/features/combo#dictionary-management
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
