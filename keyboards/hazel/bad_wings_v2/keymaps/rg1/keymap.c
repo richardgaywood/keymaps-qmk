@@ -3,6 +3,11 @@
 #include "keymap_uk.h"
 
 
+#define CIRQUE_CPI_MIN 400
+#define CIRQUE_CPI_MAX 1200
+#define CIRQUE_CPI_STEP 100
+
+
 enum bad_wings_layers {
     QWERTY,
     COMMANDS,
@@ -72,6 +77,6 @@ void pointing_device_init_user(void) {
     set_auto_mouse_layer(MOUSE);
     set_auto_mouse_enable(true);
 
-    pointing_device_set_cpi(800);
+    pointing_device_set_cpi(350);
 };
 
