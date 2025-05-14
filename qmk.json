@@ -3,6 +3,7 @@
     "build_targets": [
         ["sofle", "rg"],
         ["sofle/rev1", "rg"],
-        ["hazel/bad_wings_v2", "rg1"]
+        ["hazel/bad_wings_v2", "rg1"],
+        ["ploopyco/trackball/rev1_007", "rg1"]
     ]
 }
